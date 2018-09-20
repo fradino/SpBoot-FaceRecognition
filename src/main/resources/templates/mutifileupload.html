@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>上传两张图片</title>
+</head>
+<body>
+<h2>请上传要比较的人脸图片</h2>
+<hr/>
+<form method="POST" enctype="multipart/form-data"
+      action="/upload">
+    <p>
+        文件1：<input type="file" name="file" />
+    </p>
+    <p>
+        文件2：<input type="file" name="file" />
+    </p>
+    <p>
+        <input type="submit" value="上传" />
+    </p>
+</form>
+</body>
+</html>
