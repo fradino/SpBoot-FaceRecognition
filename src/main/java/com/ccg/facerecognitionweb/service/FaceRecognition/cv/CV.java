@@ -11,8 +11,8 @@ public class CV {
     }
 
     public static Boolean cutPic(String location) {
-        System.load("D:\\opencv\\build\\java\\x64\\opencv_java320.dll");
-        CascadeClassifier faceDetector = new CascadeClassifier("D:\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_alt.xml");
+        System.load(System.getProperty("user.dir")+"\\src\\main\\resources\\opencv_java320.dll");
+        CascadeClassifier faceDetector = new CascadeClassifier(System.getProperty("user.dir")+"\\src\\main\\resources\\haarcascade_frontalface_alt.xml");
         Mat image = Imgcodecs.imread(location);
 
         MatOfRect faceDetections = new MatOfRect();
